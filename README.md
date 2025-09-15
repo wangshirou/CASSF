@@ -38,10 +38,17 @@ For quick start, the **Vaihingen dataset** is already included in this repo unde
 
 
 ## 🚀 Quick Start
+1. Install dependencies
 
-```python
-python train_CASSF.py
-```
+    It is recommended to use Python 3.8.
+    Before training, please install the required dependencies (e.g., PyTorch, TorchVision, GDAL, Visdom, Scikit-learn, etc.) suitable for your environment.
+
+2. Run training
+
+    Once dependencies are installed, start training with:
+    ```python
+    python train_CASSF.py
+    ```
 
 ## 🔖 Citation
 If you use this code or data, please cite our paper:
