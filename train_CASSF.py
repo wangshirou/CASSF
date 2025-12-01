@@ -59,7 +59,6 @@ def main_CASSF(args, bviz=False):
             torch.cuda.empty_cache()
 
             # Re-iterate dl/du to fit the size of train_epoch
-            # loss1: supervised-learning loss
             if iteration % len_l == 0:
                 train_l_dataset = iter(train_l_loader)
 
