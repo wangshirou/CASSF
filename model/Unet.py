@@ -118,6 +118,9 @@ class UNet(nn.Module):
             elif isinstance(m, nn.BatchNorm2d):
                 m.weight.data.fill_(1)
                 m.bias.data.zero_()
+        if self.projhead is not None:
+            for param in self.projhead.parameters():
+                param.requires_grad = False  # NOT updated by gradient
 
 if __name__ == '__main__':
     model = UNet(in_channels=3, out_channels=6, proj_dim=64)
