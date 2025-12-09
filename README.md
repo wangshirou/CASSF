@@ -22,10 +22,10 @@ This repository provides the official PyTorch implementation of the paper: **"A 
 ## 📊 Dataset
 We provide **cropped and pre-split semi-supervised training datasets** for the following benchmarks:
 
-- ISPRS Vaihingen Dataset (IRGB + DSM & labels)
-- ISPRS Potsdam Dataset(RGBIR + DSM & labels)
-- LoveDA Urban Dataset(RGB & labels)
-- LoveDA Rural Dataset(RGB & labels)
+- ISPRS Vaihingen Dataset (IR-R-G + DSM & labels)
+- ISPRS Potsdam Dataset(R-G-B-IR + DSM & labels)
+- LoveDA Urban Dataset(R-G-B & labels)
+- LoveDA Rural Dataset(R-G-B & labels)
 
 Each dataset includes multiple labeled/unlabeled splits for semi-supervised learning: `1/2`, `1/4`, `1/8`, `1/16`, `1/32`, `1/64` (e.g., `1/8` means 12.5% labeled and 87.5% unlabeled).  
 
